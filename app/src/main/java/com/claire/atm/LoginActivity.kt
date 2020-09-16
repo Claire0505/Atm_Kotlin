@@ -2,17 +2,20 @@ package com.claire.atm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
-class MainActivity : AppCompatActivity() {
-    //登入狀態
-    var login = false
-
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //檢查使用者是否登入過
-        if (!login){
-
-        }
+        setContentView(R.layout.activity_login)
     }
+
+    fun login(view: View) {
+
+    }
+
+    fun cancel(view: View) {
+
+    }
+
 }
