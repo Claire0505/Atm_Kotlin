@@ -1,6 +1,7 @@
 package com.claire.atm
 
 import android.app.Activity
+import android.app.NativeActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //startActivity(Intent(this, MaterialActivity::class.java))
+
         //檢查使用者是否登入過
         if (!login){
             Intent(this, LoginActivity:: class.java).apply {
